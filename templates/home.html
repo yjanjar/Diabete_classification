@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Diabetes Classification | ML</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/jumbotron-narrow.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <h3 class="text-muted">Diabetes Classification - Demo</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Predicting Diabetes </h1>
+        <p class="lead">Put your patient characteristics to obtain predition!</p>
+        <!-- <p><a class="btn btn-lg btn-success" href="home" role="button">Get started</a></p> -->
+      </div>
+        <form action="/predict/" method="post">
+		  <div class="form-group row">
+		    <label for="inputPregnancies" class="col-sm-3 col-form-label">Pregnancies</label>
+		    <div class="col-sm-8">
+		      <input step="0.01" type="number" class="form-control" id="inputPregnancies" name="inputPregnancies" placeholder="Pregnancies">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="inputGlucose" class="col-sm-3 col-form-label">Glucose</label>
+		    <div class="col-sm-8">
+		      <input step="0.01" type="number" class="form-control" id="inputGlucose" name="inputGlucose" placeholder="Glucose ">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="inputBloodPressure" class="col-sm-3 col-form-label">Blood Pressure</label>
+		    <div class="col-sm-8">
+		      <input step="0.01" type="number" class="form-control" id="inputBloodPressure" name="inputBloodPressure" placeholder="Blood Pressure ">
+		    </div>
+          </div>
+          
+          <div class="form-group row">
+		    <label for="inputPetalWidth" class="col-sm-3 col-form-label">Petal Width</label>
+		    <div class="col-sm-8">
+		      <input step="0.01" type="number" class="form-control" id="inputPetalWidth" name="inputPetalWidth" placeholder="Petal Width ">
+		    </div>
+          </div>
+          
+		  <div class="form-group row">
+		    <label for="inputInsuline" class="col-sm-3 col-form-label">Insuline</label>
+		    <div class="col-sm-8">
+		      <input step="0.01" type="number" class="form-control" id="inputInsuline" name="inputInsuline" placeholder="Insuline ">
+		    </div>
+          </div>
+          
+          <div class="form-group row">
+		    <label for="inputBMI" class="col-sm-3 col-form-label">BMI</label>
+		    <div class="col-sm-8">
+		      <input step="0.01" type="number" class="form-control" id="inputBMI" name="inputBMI" placeholder="BMI ">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="inputDiabetesPredigreeFunction" class="col-sm-3 col-form-label">Diabetes Predigree Function</label>
+		    <div class="col-sm-8">
+		      <input step="0.01" type="number" class="form-control" id="inputSepalWidth" name="inputSepalWidth" placeholder="Diabetes Predigree Function ">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="inputAge" class="col-sm-3 col-form-label">Age</label>
+		    <div class="col-sm-8">
+		      <input step="0.01" type="number" class="form-control" id="inputAge" name="inputAge" placeholder="Age ">
+		    </div>
+		  </div>
+		  
+		  
+		  <div class="form-group row">
+		    <div class="col-sm-5">
+		      <button type="submit" class="btn btn-primary">Predict</button>
+		    </div>
+		  </div>
+		</form>
+
+      <footer class="footer">
+        <p>&copy; Youssef Janjar 2020</p>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>
