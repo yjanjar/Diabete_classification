@@ -1,36 +1,44 @@
 import pickle
+import numpy as np
 from flask import Flask, render_template, request
+from tensorflow.keras.models import load_model
 
 
-IRIS_TYPES = {
-	0: 'setosa',
-	1: 'versicolor',
-	2: 'virginica'
+TEST_RESULTS = {
+	0: 'negative',
+	1: 'postive'
 }
 
-model = pickle.load(open(f"model.sav", 'rb'))
+model = load_model("models/best_model.hdf5")
 
 app = Flask(__name__)
 
 @app.route('/')
 def iris_index():
-    return render_template('index.html')
+    return render_template('home.html')
 
 
 @app.route('/predict/', methods=['POST'])
 def results():
     if request.method == 'POST':
 
-        sepal_length = request.form['inputSepalLength']
-        sepal_width = request.form['inputSepalWidth']
-        petal_length = request.form['inputPetalLength']
-        petal_width = request.form['inputPetalWidth']
+        pregnancies = float(request.form['inputPregnancies'])
+        glucose = float(request.form['inputGlucose'])
+        bloodpressure = float(request.form['inputBloodPressure'])
+        skinthinchness = float(request.form['inputSkinThickness'])
+        insuline = float(request.form['inputInsuline'])
+        bmi = float(request.form['inputBMI'])
+        dpf = float(request.form['inputDiabetesPredigreeFunction'])
+        age = float(request.form['inputAge'])
 
-        data = [[sepal_length, sepal_width, petal_length, petal_width]]
-        pred = model.predict(data)[0]
-        flower_name = IRIS_TYPES[pred]
+        data = [[pregnancies, glucose, bloodpressure, skinthinchness,
+         insuline, bmi, dpf, age]]
+        #data = np.array(data).astype(np.float)
+        #print(type(data), data.shape)
+        pred = np.argmax(model.predict(data))
+        result = TEST_RESULTS[pred]
 
-        return render_template('prediction.html', iris_type=flower_name)
+        return render_template('predict.html', result=result)
 
 
 
