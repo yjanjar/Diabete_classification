@@ -14,10 +14,17 @@ A documented notebook is available with the EDA and all the different models and
 
 A few highlight plots:
 
-
 ![Alt text](img/featimp.png?raw=true "Features importances")
 
+Overall results of the different models before param optimization
+
 ![Alt text](img/results.png?raw=true "Overall results of the different models before param optimization.")
+
+ROC curves
+![Alt text](img/ROC.png?raw=true "ROC curves.")
+
+Confusion matrix for the MLP.
+![Alt text](img/conf.png?raw=true "Confusion matrix for the MLP.")
 
 
 
