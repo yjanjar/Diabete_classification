@@ -17,6 +17,10 @@ A few highlight plots:
 
 ![Alt text](img/featimp.png?raw=true "Features importances")
 
+![Alt text](img/results.png?raw=true "Overall results of the different models before param optimization.")
+
+
+
 
 #### Setup:
 ```sh
