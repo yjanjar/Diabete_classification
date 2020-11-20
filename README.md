@@ -28,9 +28,9 @@ Confusion matrix for the MLP.
 
 Demo GUI.
 
-![Alt text](img/conf.png?raw=true "Home page.")
+![Alt text](img/home.png?raw=true "Home page.")
 
-![Alt text](img/conf.png?raw=true "predict page.")
+![Alt text](img/predict.png?raw=true "predict page.")
 
 
 
