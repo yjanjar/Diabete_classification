@@ -15,7 +15,7 @@ A documented notebook is available with the EDA and all the different models and
 A few highlight plots:
 
 
-![Alt text](img/featimp?raw=true "Features importances")
+![Alt text](img/featimp.png?raw=true "Features importances")
 
 
 #### Setup:
