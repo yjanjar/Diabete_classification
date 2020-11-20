@@ -30,7 +30,7 @@ Demo GUI.
 
 ![Alt text](img/home.png?raw=true "Home page.")
 
-![Alt text](img/predict.png?raw=true "predict page.")
+![Alt text](img/pred.png?raw=true "predict page.")
 
 
 
