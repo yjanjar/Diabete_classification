@@ -12,6 +12,12 @@ The objective is to explore the dataset and understand the data and the differen
 #### Code:
 A documented notebook is available with the EDA and all the different models and optimizations perfermed for this task. I also encluded the code to deploy the "Best" model (a MLP) using Flask server and be able to perform prediction using a GUI.
 
+A few highlight plots:
+
+
+![Alt text](img/featimp?raw=true "Features importances")
+
+
 #### Setup:
 ```sh
 $ pip3 install -r requirements.txt
