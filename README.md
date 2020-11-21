@@ -26,6 +26,12 @@ ROC curves
 Confusion matrix for the MLP.
 ![Alt text](img/conf.png?raw=true "Confusion matrix for the MLP.")
 
+Demo GUI.
+
+![Alt text](img/home.png?raw=true "Home page.")
+
+![Alt text](img/pred.png?raw=true "predict page.")
+
 
 
 
